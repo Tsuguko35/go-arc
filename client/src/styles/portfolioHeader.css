@@ -1,0 +1,106 @@
+#portfolioHeader{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#portfolioHeader > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding-inline: 100px;
+    max-width: 1440px;
+}
+
+#portfolioHeader > .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolioHeader > .background > .overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--hero-overlay-3);
+    z-index: 0;
+}
+
+#portfolioHeader > .background > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+#portfolioHeader > .wrapper > .text-content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#portfolioHeader > .wrapper > .text-content > .title{
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+}
+
+#portfolioHeader > .wrapper > .text-content > .description{
+    font-size: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 1024px){
+    #portfolioHeader > .wrapper > .text-content > .title{
+        font-size: 50px;
+    }
+
+    #portfolioHeader > .wrapper > .text-content > .description{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #portfolioHeader > .wrapper{
+        padding-inline: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #portfolioHeader > .wrapper{
+        height: 100%;
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #portfolioHeader > .wrapper{
+        padding: 20px;
+    }
+
+    #portfolioHeader > .wrapper > .text-content{
+        width: 100%;
+    }
+
+    #portfolioHeader > .wrapper > .text-content > .title{
+        font-size: 42px;
+    }
+
+    #portfolioHeader > .wrapper > .text-content > .description{
+        font-size: 14px;
+    }
+}

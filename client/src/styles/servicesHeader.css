@@ -1,0 +1,223 @@
+#servicesHeader{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#servicesHeader > .wrapper{
+    width: 100%;
+    height: 100%;
+   
+}
+
+#servicesHeader > .wrapper > .header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#servicesHeader > .wrapper > .header > .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+#servicesHeader > .wrapper > .header > .background > .overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--hero-overlay-dark1);
+    backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+#servicesHeader > .wrapper > .header > .background > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#servicesHeader > .wrapper > .header > .header-content{
+    position: relative;
+    width: 100%;
+    min-height: 725px;
+    z-index: 2;
+    padding: 0 100px;
+    max-width: 1920px;
+    display: flex;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content{
+    width: 100%;
+    height: 100%;
+    min-height: 725px;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 50px;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content > .title{
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content > .description{
+    color: white;
+    font-size: 20px;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content > .key-points{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content > .key-points > .point{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content > .key-points > .point > img{
+    min-width: 25px;
+    min-height: 25px;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content > .key-points > .point > p{
+    color: white;
+    font-size: 24px;
+    font-weight: 600px;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content > .actions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content > .actions > a{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: var(--primary);
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.5);
+    transition: all 250ms ease-in-out;
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .text-content > .actions > a:hover{
+    background-color: var(--white-hover);
+}
+
+#servicesHeader > .wrapper > .header > .header-content > .form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1270px){
+    #servicesHeader > .wrapper > .header > .header-content{
+        padding: 0 20px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content{
+        padding: 90px 50px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content > .title{
+        font-size: 55px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content > .description{
+        font-size: 18px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content > .key-points > .point > p{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #servicesHeader > .wrapper > .header > .header-content{
+        flex-direction: column;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content{
+        padding: 20px 150px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content,
+    #servicesHeader > .wrapper > .header > .header-content > .text-content{
+        height: 100%;
+        min-height: 0px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content > .actions{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #servicesHeader > .wrapper > .header > .header-content > .text-content{
+        padding: 20px 80px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #servicesHeader > .wrapper > .header > .header-content > .text-content{
+        padding: 20px 20px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content > .title{
+        font-size: 40px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content > .description{
+        font-size: 14px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content > .key-points > .point > p{
+        font-size: 18px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content > .key-points > .point > img{
+        min-width: 16px;
+        min-height: 16px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .text-content > .actions > a{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #servicesHeader > .wrapper > .header > .header-content, #servicesHeader > .wrapper > .header > .header-content > .text-content{
+        padding: 10px;
+    }
+
+    #servicesHeader > .wrapper > .header > .header-content > .form{
+        padding-inline: 10px;
+    }
+}

@@ -1,0 +1,50 @@
+#serviceKeyPoints{
+    padding: 50px 0;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+}
+
+#serviceKeyPoints > .key-points-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+#serviceKeyPoints > .key-points-grid > .key-point{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#serviceKeyPoints > .key-points-grid > .key-point > .Icon{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#serviceKeyPoints > .key-points-grid > .key-point > .Icon > img{
+    min-width: 64px;
+    min-height: 64px;
+    object-fit: contain;
+}
+
+#serviceKeyPoints > .key-points-grid > .key-point > .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1023px){
+    #serviceKeyPoints > .key-points-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #serviceKeyPoints > .key-points-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,180 @@
+#contactUsForm{
+    width: 100%;
+    max-width: 540px;
+    min-height: 620px;
+    background-color: var(--form-background);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+}
+
+#contactUsForm > .title{
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+#contactUsForm > .inputs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#contactUsForm > .inputs > .input-group{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#contactUsForm > .inputs > .input-group > .city-and-state{
+    display: flex;
+    gap: 20px;
+}
+
+#contactUsForm > .inputs > .input-group .input-with-label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#contactUsForm > .inputs > .input-group.two .input-with-label{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#contactUsForm > .inputs > .input-group .input-with-label > .label{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#contactUsForm > .inputs > .input-group .input-with-label > input,
+#contactUsForm > .inputs > .input-group .input-with-label > select{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid var(--input-border);
+    background-color: var(--input-fill);
+    border-radius: 5px;
+}
+
+#contactUsForm > .inputs > .input-group .input-with-label.city{
+    width: 40%;
+}
+
+#contactUsForm > .inputs > .input-group .input-with-label.state{
+    width: 50%;
+}
+
+#contactUsForm > .inputs > .input-group .input-with-label > input:focus-visible,
+#contactUsForm > .inputs > .input-group .input-with-label > select:focus-visible{
+    border: 1px solid var(--primary);
+}
+
+#contactUsForm > .inputs > .input-group .input-with-label > textarea{
+    border: 1px solid var(--input-border);
+    background-color: var(--input-fill) !important;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+    padding: 10px;
+    resize: none;
+    font-size: 14px;
+}
+
+#contactUsForm > .inputs > .input-group .input-with-label > textarea:focus-visible{
+    border: 1px solid var(--primary);
+
+}
+
+#contactUsForm> .inputs > .submit-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+#contactUsForm > .inputs > .submit-area > p.success{
+    padding: 10px;
+    background-color: #c8f7c8;
+    border: 1px solid #93C572;
+    color: green;
+    border-radius: 8px;
+}
+
+#contactUsForm > .inputs > .submit-area > p.error{
+    padding: 10px;
+    background-color: #F2D2D4;
+    border: 1px solid #FA5F55;
+    color: #FA5F55;
+    border-radius: 8px;
+}
+
+#contactUsForm > .inputs > .submit-area > .message-submit{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+}
+
+#contactUsForm > .inputs > .submit-area > .message-submit:hover{
+    background-color: var(--primary-hover);
+}
+
+@media only screen and (max-width: 425px){
+    #contactUsForm{
+        padding: 20px 20px;
+    }
+
+    #contactUsForm > .inputs > .input-group{
+        flex-direction: column;
+    }
+
+    #contactUsForm > .inputs > .input-group.two > .input-with-label{
+        width: 100%;
+    }
+
+    #contactUsForm > .inputs > .input-group .input-with-label.city{
+        width: 100%;
+    }
+    
+    #contactUsForm > .inputs > .input-group .input-with-label.state{
+        width: 100%;
+    }
+
+    #contactUsForm > .inputs > .submit-area > .message-submit{
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #contactUsForm > .inputs > .submit-area{
+        flex-direction: column;
+        
+    }
+}

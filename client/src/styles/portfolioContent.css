@@ -1,0 +1,254 @@
+#portfolioContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#portfolioContent > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#portfolioContent > .wrapper > .text-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#portfolioContent > .wrapper > .text-content > .title{
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#portfolioContent > .wrapper > .text-content > .description{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+#portfolioContent > .wrapper > .projects-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#portfolioContent > .wrapper > .projects-container > .title{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 48px;
+    font-weight: 600;
+    border-bottom: 3px solid var(--accent);
+}
+
+#portfolioContent > .wrapper > .projects-container > .load-more{
+    text-align: center;
+    max-width: fit-content;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--accent-2);
+}
+
+#portfolioContent > .wrapper > .projects-container > .project-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#portfolioContent > .wrapper > .projects-container > .project-grid > .project{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#portfolioContent > .wrapper > .projects-container > .project-grid > .project > .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hero-overlay-3) ;
+    z-index: 0;
+}
+
+#portfolioContent > .wrapper > .projects-container > .project-grid > .project > .text-content{
+    position:   absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#portfolioContent > .wrapper > .projects-container > .project-grid > .project > .text-content > .title{
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+#portfolioContent > .wrapper > .projects-container > .project-grid > .project > .text-content > .sub{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+#portfolioContent > .wrapper > .projects-container > .project-grid > .project > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+#portfolioContent > .wrapper > .projects-container > .project-grid > .project:hover{
+    transform: translateY(-5px);
+}
+
+#portfolioContent > .wrapper > .projects-container > .load-more:hover{
+    text-decoration: underline 2px;
+}
+
+#portfolioContent > .wrapper > .company-skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#portfolioContent > .wrapper > .company-skills > .label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#portfolioContent > .wrapper > .company-skills > .label > .title{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#portfolioContent > .wrapper > .company-skills > .label > .desc{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#portfolioContent > .wrapper > .company-skills .skills-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+#portfolioContent > .wrapper > .company-skills .skill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#portfolioContent > .wrapper > .company-skills .skill > .progress-group{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+  
+#portfolioContent > .wrapper > .company-skills .skill-name {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+}
+  
+#portfolioContent > .wrapper > .company-skills .progress-bar {
+    width: 100%;
+    background: var(--input-fill);
+    overflow: hidden;
+    height: 5px;
+}
+  
+#portfolioContent > .wrapper > .company-skills .progress {
+    height: 100%;
+    background: var(--secondary);
+}
+  
+#portfolioContent > .wrapper > .company-skills .percentage {
+    flex: 0;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px){
+    #portfolioContent > .wrapper{
+        padding: 50px;
+    }
+
+    #portfolioContent > .wrapper > .projects-container > .project-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #portfolioContent > .wrapper > .projects-container > .project-grid > .project > .text-content > .title{
+        font-size: 36px;
+    }
+    
+    #portfolioContent > .wrapper > .projects-container > .project-grid > .project > .text-content > .sub{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+    #portfolioContent > .wrapper{
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #portfolioContent > .wrapper > .projects-container > .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #portfolioContent > .wrapper > .company-skills .skills-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #portfolioHeader > .wrapper > .text-content > .title{
+        font-size: 36px;
+    }
+
+    #portfolioContent > .wrapper > .projects-container > .title{
+        font-size: 38px;
+    }
+
+    #portfolioContent > .wrapper > .projects-container > .project-grid > .project > .text-content > .title{
+        font-size: 28px;
+    }
+    
+    #portfolioContent > .wrapper > .projects-container > .project-grid > .project > .text-content > .sub{
+        font-size: 18px;
+    }
+}

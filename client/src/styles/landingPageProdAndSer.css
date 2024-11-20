@@ -1,0 +1,396 @@
+#landingPageProdAndSer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#landingPageProdAndSer > .wrapper{
+    position: relative;
+    padding: 50px 100px;
+    width: 100%;
+    max-width: 1536px;
+    border-top: 1px solid var(--accent-3);
+}
+
+#landingPageProdAndSer > .wrapper > .background-img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-width: 1536px;
+    height: 344px;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#landingPageProdAndSer > .wrapper > .background-img > .overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--hero-overlay-2);
+}
+
+#landingPageProdAndSer > .wrapper > .background-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+#landingPageProdAndSer > .wrapper > .title{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#landingPageProdAndSer > .wrapper > .title > .upper{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#landingPageProdAndSer > .wrapper > .title > .lower{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Card */
+#landingPageProdAndSer  > .wrapper > .reviews-container .card{
+    width: 100%;
+    height: 100%;
+}
+
+#landingPageProdAndSer  > .wrapper > .reviews-container .card-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .display-picture{
+    position: absolute;
+    top: 0;
+    width: calc(100% - 30px);
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+#landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .display-picture > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .service-details{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 120px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+}
+
+#landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .service-details > .service-name{
+    width: 100%;
+    color: var(--accent-2);
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .service-details > .service-description{
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6; /* Number of lines to show */
+    line-height: 1.5; /* Adjust this to your line height */
+    max-height: calc(1.5em * 6); /* line-height * number of lines */
+}
+
+#landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .service-details > .action{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .service-details > .action > a{
+    color: var(--accent-3);
+    font-weight: 600;
+    transition: color 250ms ease-in-out;
+}
+
+#landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .service-details > .action > a:hover{
+    color: var(--black);
+}
+
+/* Carousel */
+
+#landingPageProdAndSer  > .wrapper > .reviews-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingPageProdAndSer .slick-slide {
+    padding: 0 5px;
+}
+
+#landingPageProdAndSer .slick-list {
+    margin: 0 -5px;
+}
+
+#landingPageProdAndSer .slide {
+    background: #eee;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#landingPageProdAndSer .slick-slider{
+    width: 1200px;
+}
+
+#landingPageProdAndSer .slick-dots li.slick-active button:before{
+    color: var(--primary) !important;
+}
+
+#landingPageProdAndSer .slick-dots li button,
+#landingPageProdAndSer .slick-dots li button:before{
+    width: 17px;
+    height: 17px;
+    font-size: 17px;
+}
+
+#landingPageProdAndSer .slick-track{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#landingPageProdAndSer > .wrapper > .reviews-container .slick-slide{
+    display: flex;
+    align-items: flex-end;
+    transition: padding-bottom 250ms ease-in-out;
+}
+
+
+#landingPageProdAndSer > .wrapper > .reviews-container .slick-slide > div{
+    width: 100%;
+    height: 100%;
+}
+
+#landingPageProdAndSer .next-arrow,
+#landingPageProdAndSer .prev-arrow{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#landingPageProdAndSer .next-arrow{
+    right: -50px;
+}
+
+#landingPageProdAndSer .prev-arrow{
+    left: -50px;
+}
+
+#landingPageProdAndSer .next-arrow > svg,
+#landingPageProdAndSer .prev-arrow > svg{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+#landingPageProdAndSer .prev-arrow > svg{
+    transform: rotate(180deg);
+}
+
+#landingPageProdAndSer .next-arrow > svg *,
+#landingPageProdAndSer .prev-arrow > svg *  {
+    color: var(--black);
+    transition: color 250ms ease;
+}
+
+#landingPageProdAndSer .next-arrow:hover > svg *,
+#landingPageProdAndSer .prev-arrow:hover > svg *{
+    color: var(--primary);
+}
+
+
+@media only screen and (max-width: 1336px){
+    #landingPageProdAndSer .slick-slider{
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #landingPageProdAndSer .slick-slider{
+        width: 900px;
+    }
+
+    #landingPageProdAndSer .slick-track{
+        height: 450px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .background-img{
+
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #landingPageProdAndSer > .wrapper > .title{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #landingPageProdAndSer .slick-slider{
+        width: 800px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .reviews-container .card > .card-content > .review{
+        line-height: 1.3;
+    }
+
+    #landingPageProdAndSer > .wrapper > .title{
+        font-size: 37px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #landingPageProdAndSer .slick-slider{
+        width: 400px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .reviews-container .card > .card-content > .review{
+        line-height: 1.3;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+    #landingPageProdAndSer .slick-slider{
+        width: 300px;
+    }
+
+    #landingPageProdAndSer > .wrapper{
+        padding: 50px 20px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .title{
+        font-size: 30px;
+    }
+
+    #landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .service-details > .service-description{
+        font-size: 13px;
+        -webkit-line-clamp: 6;
+        max-height: calc(1.5em* 6);
+    }
+
+    #landingPageProdAndSer  > .wrapper > .reviews-container .card-content > .service-details > .service-name{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #landingPageProdAndSer > .wrapper > .title > .lower{
+        font-size: 30px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .title > .upper{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #landingPageProdAndSer .slick-slider{
+        width: 250px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .reviews-container .card > .card-content > .review{
+        font-size: 13px;
+        -webkit-line-clamp: 12;
+        max-height: calc(1.5em* 12);
+    }
+
+    #landingPageProdAndSer > .wrapper > .reviews-container .card > .card-content > .subject{
+        font-size: 14px;
+        width: 210px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .reviews-container .card > .card-content > .user-details > .profile-picture > img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .reviews-container .card > .card-content > .user-details > .details > .name{
+        font-size: 14px;
+        width: 120px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .reviews-container .card > .card-content > .user-details > .details > .sub{
+        font-size: 12px;
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #landingPageProdAndSer .slick-slider{
+        width: 225px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .reviews-container .card > .card-content > .user-details > .details > .name{
+        width: 110px;
+    }
+
+    #landingPageProdAndSer > .wrapper > .reviews-container .card > .card-content > .user-details > .details > .sub{
+        width: 110px;
+    }
+}

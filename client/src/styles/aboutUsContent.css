@@ -1,0 +1,510 @@
+#aboutUsContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutUsContent > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#aboutUsContent > .wrapper > .about-details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#aboutUsContent > .wrapper > .about-details > .image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutUsContent > .wrapper > .about-details > .image > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .label > img{
+    min-width: 36px;
+    min-height: 36px;
+    object-fit: contain;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .label > p{
+    font-size: 18px;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .overview-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 2px solid var(--input-fill);
+    padding-bottom: 30px;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .title{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .company-description{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .actions > a{
+    width: 180px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-color: var(--input-fill);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .actions > a:hover{
+    background-color: var(--white-hover);
+    box-shadow: 0px 5px 20px -15px var(--black);
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .actions > a.active{
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0px 5px 20px -15px var(--black);
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .description{
+    font-weight: 500;
+    text-align: justify;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .action{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .action > p{
+    width: 150px;
+    height: 50px;
+    background-color: var(--secondary);
+    box-shadow: 0px 5px 20px -15px var(--black);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+}
+
+#aboutUsContent > .wrapper > .about-details > .company-details > .action > p:hover{
+    background-color: var(--primary-hover);
+}
+
+#aboutUsContent > .wrapper > .team-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#aboutUsContent > .wrapper > .team-details > .label{
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Poppins', 'Inter';
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member{
+    width: 100%;
+    gap: 50px;
+    display: flex;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member.inverted{
+    flex-direction: row-reverse;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .image{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .member-details{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .name-position{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .name-position > .name{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .name-position > .position{
+    font-size: 24px;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .description{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .action{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .action > a{
+    width: 180px;
+    height: 50px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 250ms ease-in-out;
+}
+
+#aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .action > a:hover{
+    background-color: var(--primary-hover);
+}
+
+#aboutUsContent > .hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 355px;
+}
+
+#aboutUsContent > .hero > .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#aboutUsContent > .hero > .background > .overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--hero-overlay-dark2);
+    z-index: 0;
+}
+
+#aboutUsContent > .hero > .background > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    z-index: -1;
+}
+
+#aboutUsContent > .hero > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-message{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .label > p{
+    color: white;
+    font-size: 18px;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .text-content > .title{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .text-content > .desc{
+    color: white;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .text-content > .action{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .text-content > .action > a{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px white solid;
+    transition: all 250ms ease-in-out;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .text-content > .action > a:hover{
+    background-color: white;
+    color: var(--accent);
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-cards > .card{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-cards > .card > img{
+    min-width: 70px;
+    min-height: 70px;
+    object-fit: contain;
+}
+
+#aboutUsContent > .hero > .wrapper > .hero-content > .hero-cards > .card > p{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    line-height: 2.5rem;
+    font-weight: 500;
+    text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.3),
+    0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+
+@media only screen and (max-width: 1270px){
+    #aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .name-position > .name{
+        font-size: 32px;
+    }
+
+    #aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .name-position > .position{
+        font-size: 20px;
+    }
+
+    #aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .description{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #aboutUsContent > .hero > .wrapper > .hero-content{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #aboutUsContent > .wrapper > .about-details{
+        flex-direction: column-reverse;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .image{
+        width: 100%;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .company-details{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .action > a,
+    #aboutUsContent > .wrapper > .about-details > .company-details > .action > p{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #aboutUsContent > .wrapper > .team-details > .label{
+        font-size: 42px;
+    }
+
+    #aboutUsContent > .wrapper > .team-details > .team-member > .member-details{
+        gap: 20px;
+    }
+
+    #aboutUsContent > .wrapper > .team-details > .team-member > .image{
+        width: 50%;
+    }
+
+    #aboutUsContent > .wrapper > .team-details > .team-member > .member-details{
+        width: 50%;
+    }
+
+    #aboutUsContent > .wrapper{
+        padding: 50px;
+    }
+
+    #aboutUsContent > .hero > .wrapper{
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #aboutUsContent > .wrapper{
+        padding: 20px;
+    }
+
+    #aboutUsContent > .hero > .wrapper{
+        padding: 30px 20px;
+    }
+
+    #aboutUsContent > .wrapper > .team-details > .team-member,
+    #aboutUsContent > .wrapper > .team-details > .team-member.inverted{
+        flex-direction: column;
+    }
+
+    #aboutUsContent > .wrapper > .team-details > .team-member > .image,
+    #aboutUsContent > .wrapper > .team-details > .team-member > .member-details{
+        width: 100%;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .actions{
+        gap: 20px;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .title{
+        font-size: 30px;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .company-description,
+    #aboutUsContent > .wrapper > .about-details > .company-details > .description,
+    #aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .description{
+        font-size: 14px;
+    }
+
+    #aboutUsContent > .hero > .wrapper > .hero-content > .hero-cards{
+        flex-direction: column;
+    }
+
+    #aboutUsContent > .wrapper > .team-details > .team-member > .image > img{
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .actions{
+        gap: 10px;
+    }
+}

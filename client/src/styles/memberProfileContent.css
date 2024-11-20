@@ -1,0 +1,276 @@
+#memberProfileContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#memberProfileContent > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 100px;
+}
+
+#memberProfileContent > .wrapper > .member-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+#memberProfileContent > .wrapper > .member-profile > .member-details,
+#memberProfileContent > .wrapper > .member-profile > .member-skills{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .member-image,
+#memberProfileContent > .wrapper > .member-profile > .member-skills > .label{
+    flex: 1;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details,
+#memberProfileContent > .wrapper > .member-profile > .member-skills > .skills{
+    flex: 3;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .member-image{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .member-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .name-position{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .name-position > .name{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .name-position > .position{
+    font-size: 24px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 4px solid var(--accent);
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .label{
+    font-weight: bold;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail:not(.links){
+    font-size: 14px;
+    font-style: italic;
+    word-wrap: break-word;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.link{
+    color: var(--secondary);
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links > a{
+    font-weight: bold;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links > a:hover{
+    color: var(--primary);
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links > a > .link-arrow{
+    opacity: 0;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links > a:hover > .link-arrow{
+    opacity: 1;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links > a > .link-arrow svg{
+    width: 20px;
+    height: 20px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links > a:hover > .link-arrow *{
+    color: var(--secondary);
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-skills > .label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-skills > .label > .title{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-skills > .label > .sub{
+    font-weight: bold;
+    color: var(--primary);
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-skills > .skills{
+    padding: 20px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 4px solid var(--accent);
+    gap: 30px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-skills > .skills > .skill{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-skills > .skills > .skill > .skill-number{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+#memberProfileContent > .wrapper > .member-profile > .member-skills > .skills > .skill > .skill-name{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+
+@media only screen and (max-width: 1270px){
+    #memberProfileContent > .wrapper > .member-profile > .member-details, 
+    #memberProfileContent > .wrapper > .member-profile > .member-skills{
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #memberProfileContent > .wrapper > .member-profile > .member-details > .details > .name-position > .name{
+        font-size: 32px;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-details > .details > .name-position > .position{
+        font-size: 20px;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .summary,
+    #memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .label,
+    #memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail:not(.links),
+    #memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links > a{
+        font-size: 14px;
+    }
+    
+    #memberProfileContent > .wrapper > .member-profile > .member-skills > .label > .title{
+        font-size: 42px;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-skills > .label > .sub{
+        font-size: 14px;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-skills > .skills > .skill > .skill-number{
+        font-size: 18px;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-skills > .skills > .skill > .skill-name{
+        font-size: 20px;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-skills > .skills > .skill > .skill-desc{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-details, #memberProfileContent > .wrapper > .member-profile > .member-skills{
+        flex-direction: column;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-details > .member-image{
+        display: flex;
+        justify-content: center;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-details > .member-image > img{
+        max-width: 300px;
+        border-radius: 8px;
+    }
+
+    #memberProfileContent > .wrapper{
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #memberProfileContent > .wrapper{
+        padding: 20px;
+    }
+
+    #memberProfileContent > .wrapper > .member-profile > .member-skills > .skills{
+        grid-template-columns: 1fr;
+    }
+}

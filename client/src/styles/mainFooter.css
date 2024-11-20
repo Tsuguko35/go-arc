@@ -1,0 +1,185 @@
+#mainFooter{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+#mainFooter > .wrapper{
+    width: 100%;
+    max-width: 1536px;
+    min-height: 485px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#mainFooter > .wrapper > .icon-adress,
+#mainFooter > .wrapper > .nav-top{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+#mainFooter > .wrapper > .icon-adress > .icon{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#mainFooter > .wrapper > .icon-adress > .icon > img{
+    width: 85px;
+    height: 35px;
+    object-fit: cover;
+}
+
+#mainFooter > .wrapper > .icon-adress > .address{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#mainFooter > .wrapper > .icon-adress > .address > p{
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins', 'Inter';
+}
+
+#mainFooter > .wrapper > .icon-adress > .address > .contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+#mainFooter > .wrapper > .icon-adress > .address > .contact-info > p{
+    color: white;
+    font-size: 14px;
+    text-decoration: underline;
+    font-family: 'Poppins', 'Inter';
+}
+
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials *{
+    font-family: 'Poppins', 'Inter';
+}
+
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials > .container > .nav,
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials > .container > .socials{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials > .container > .nav > a,
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials > .container > .socials > a{
+    color: white;
+    font-weight: 300;
+    transition: color 250ms ease-in-out;
+}
+
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials > .container > .nav > a:hover,
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials > .container > .socials > a:hover{
+    color: var(--secondary);
+}
+
+#mainFooter > .wrapper > .nav-top > .navigation-and-socials > .copyright{
+    color: white;
+    font-weight: 300;
+}
+
+#mainFooter > .wrapper > .nav-top > .to-top{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#mainFooter > .wrapper > .nav-top > .to-top > .action{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+#mainFooter > .wrapper > .nav-top > .to-top > .action > svg{
+    width: 20px;
+    height: 20px;
+}
+
+#mainFooter > .wrapper > .nav-top > .to-top > .action > svg *{
+    color: var(--link-color);
+}
+
+#mainFooter > .wrapper > .nav-top > .to-top > .action:hover{
+    background-color: white;
+}
+
+#mainFooter > .wrapper > .nav-top > .to-top > .action > svg *:hover{
+    color: var(--link-color);
+}
+
+
+@media only screen and (max-width: 768px){
+    #mainFooter > .wrapper{
+        flex-direction: column;
+        padding-inline: 150px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #mainFooter > .wrapper{
+        flex-direction: column;
+        padding-inline: 50px;
+    }
+
+    #mainFooter > .wrapper > .icon-adress,
+    #mainFooter > .wrapper > .nav-top{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #mainFooter > .wrapper > .icon-adress > .icon{
+        width: 100%;
+    }
+
+    #mainFooter > .wrapper > .nav-top > .to-top{
+        width: 100%;
+    }
+
+    #mainFooter > .wrapper{
+        padding: 50px;
+    }
+
+    #mainFooter > .wrapper > .icon-adress > .address > p{
+        font-size: 20px;
+    }
+}

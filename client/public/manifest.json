@@ -1,0 +1,25 @@
+{
+  "short_name": "Arc Corp.",
+  "name": "Arc Corporation",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716383345/uwsnfs47rhvv1brgnm6f.webp",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716383345/uwsnfs47rhvv1brgnm6f.webp",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716383345/uwsnfs47rhvv1brgnm6f.webp",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

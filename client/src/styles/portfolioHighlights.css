@@ -1,0 +1,205 @@
+#portfolioHighlights{
+    width: 100%;
+    padding: 50px 0;
+    border-top: 1px solid var(--accent-3);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#portfolioHighlights > .highlight-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#portfolioHighlights > .highlight-header > .title-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#portfolioHighlights > .highlight-header > .title-desc > p:first-child{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#portfolioHighlights > .highlight-header > .title-desc > p:last-child{
+    font-size: 19px;
+    font-weight: 300;
+}
+
+#portfolioHighlights > .highlight-header > a {
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 217px;
+    height: 56px;
+    border: none;
+    font-weight: bold;
+    background-color: var(--secondary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: background-color 250ms ease-in-out;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#portfolioHighlights > .highlight-header > a:hover {
+    background-color: var(--primary-hover);
+}
+
+#portfolioHighlights > .portfolio-carousel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#portfolioHighlights > .portfolio-carousel > .carousel-description{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+}
+
+#portfolioHighlights > .portfolio-carousel > .carousel-description > .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#portfolioHighlights > .portfolio-carousel > .carousel-description > .text > p:first-child{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#portfolioHighlights > .portfolio-carousel > .carousel-description > .text > p:last-child{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#portfolioHighlights > .portfolio-carousel > .carousel-description > a {
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 217px;
+    height: 56px;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid var(--secondary);
+    transition: all 250ms ease-in-out;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#portfolioHighlights > .portfolio-carousel > .carousel-description > a:hover{
+    background-color: var(--secondary);
+    color: white;
+}
+
+#portfolioHighlights > .portfolio-carousel > .carousel{
+    width: 60%;
+}
+
+#portfolioHighlights .swiper-container {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+  
+#portfolioHighlights .swiper-slide {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 600px; /* Adjust this width as needed */
+    height: 350px;
+    z-index: 0;
+}
+
+#portfolioHighlights .swiper-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#portfolioHighlights .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+}
+
+#portfolioHighlights .swiper-pagination-bullet-active{
+    background: var(--secondary) !important;
+}
+
+
+@media only screen and (max-width: 1024px){
+    #portfolioHighlights > .highlight-header > .title-desc > p:first-child{
+        font-size: 30px;
+    }
+
+    #portfolioHighlights > .highlight-header > .title-desc > p:last-child,
+    #portfolioHighlights > .portfolio-carousel > .carousel-description > .text > p:first-child{
+        font-size: 18px;
+    }
+
+    #portfolioHighlights > .portfolio-carousel > .carousel-description > .text > p:last-child{
+        font-size: 26px;
+    }
+
+    #portfolioHighlights > .portfolio-carousel > .carousel-description{
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #portfolioHighlights > .portfolio-carousel{
+        flex-direction: column-reverse;
+    }
+
+    #portfolioHighlights > .portfolio-carousel > .carousel-description,
+    #portfolioHighlights > .portfolio-carousel > .carousel{
+        width: 100%;
+    }
+
+    #portfolioHighlights > .portfolio-carousel > .carousel-description{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #portfolioHighlights > .highlight-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #portfolioHighlights > .highlight-header > .title-desc > p:first-child{
+        font-size: 23px;
+    }
+
+    #portfolioHighlights > .highlight-header > .title-desc > p:last-child, #portfolioHighlights > .portfolio-carousel > .carousel-description > .text > p:first-child{
+        font-size: 16px;
+    }
+
+    #portfolioHighlights > .highlight-header > a,
+    #portfolioHighlights > .portfolio-carousel > .carousel-description > a{
+        width: 180px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,96 @@
+#roofCarousel{
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#roofCarousel > .title{
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#roofCarousel .swiper-container {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#roofCarousel .swiper-container::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 100px 0 40px 0px rgba(255, 255, 255, 1),
+    inset -100px 0 40px 0px rgba(255, 255, 255, 1);
+    z-index: 99;
+    pointer-events: none;
+}
+  
+#roofCarousel .swiper-slide {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px; /* Adjust this width as needed */
+    height: 350px;
+    z-index: 0;
+}
+
+#roofCarousel .swiper-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#roofCarousel .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+}
+
+#roofCarousel .swiper-pagination-bullet-active{
+    background: var(--secondary) !important;
+}
+
+@media only screen and (max-width: 1024px){
+    #roofCarousel > .title{
+        font-size: 35px;
+    }
+
+    #roofCarousel .swiper-container::before{
+        box-shadow: inset 50px 0 40px 0px rgba(255, 255, 255, 1),
+        inset -50px 0 40px 0px rgba(255, 255, 255, 1);
+    }
+
+    #roofCarousel .swiper-slide {
+        width: 400px; /* Adjust this width as needed */
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #roofCarousel > .title{
+        font-size: 26px;
+    }
+
+    #roofCarousel .swiper-container::before{
+        box-shadow: none;
+    }
+
+    #roofCarousel .swiper-slide {
+        width: 250px; /* Adjust this width as needed */
+        height: 230px;
+    }
+}

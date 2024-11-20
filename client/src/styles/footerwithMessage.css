@@ -1,0 +1,217 @@
+#footerWithMessage{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerWithMessage > .wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 100px;
+    max-width: 1536px;
+    gap: 40px;
+}
+
+#footerWithMessage > .wrapper > .message-container{
+    position: relative;
+    width: 100%;
+    max-width: 1536px;
+    height: 100%;
+    min-height: 704px;
+    overflow: hidden;
+}
+
+#footerWithMessage > .wrapper > .message-container > .background{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 605px;
+    background-color: var(--primary);
+    border-radius: 50px;
+    clip-path: polygon(0 0, 80% 15%, 100% 100%, 0 100% );
+}
+
+#footerWithMessage > .wrapper > .message-container > .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 605px;
+    display: flex;
+    bottom: 0;
+}
+
+#footerWithMessage > .wrapper > .message-container > .container > .text-container{
+    width: 50%;
+    height: 100%;
+    min-height: 605px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline: 100px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+#footerWithMessage > .wrapper > .message-container > .container > .text-container > .title{
+    text-align: center;
+    color: white;
+    font-size: 44px;
+}
+
+#footerWithMessage > .wrapper > .message-container > .container > .text-container > .description{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+#footerWithMessage > .wrapper > .message-container > .container > .form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footerWithMessage > .wrapper > .bottom-footer{
+    width: 100%;
+    max-width: 1536px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerWithMessage > .wrapper > .bottom-footer > .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerWithMessage > .wrapper > .bottom-footer > .logo > img{
+    width: 100px;
+    object-fit: cover;
+}
+
+#footerWithMessage > .wrapper > .bottom-footer > .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerWithMessage > .wrapper > .bottom-footer > .copyright > p{
+    font-size: 14px;
+    width: 250px;
+    text-align: center;
+    color: var(--grey);
+}
+
+#footerWithMessage > .wrapper > .bottom-footer > .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 20px;
+}
+
+#footerWithMessage > .wrapper > .bottom-footer > .socials > .icon-container{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 10px 20px 0 rgba(187, 187, 187, 0.4);
+    transition: background-color 250ms ease-in-out;
+}
+
+#footerWithMessage > .wrapper > .bottom-footer > .socials > .icon-container:hover{
+    background-color: var(--light-grey);
+}
+
+
+@media only screen and (max-width: 1440px){
+    #footerWithMessage > .wrapper > .message-container > .container > .text-container{
+        padding-inline: 100px;
+    }
+}
+
+@media only screen and (max-width: 1336px){
+    #footerWithMessage > .wrapper > .message-container > .container > .text-container{
+        padding-inline: 80px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #footerWithMessage > .wrapper{
+        padding: 10px 50px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #footerWithMessage > .wrapper > .message-container > .background{
+        clip-path: none;
+        height: 100%;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .container{
+        flex-direction: column;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .container > .text-container{
+        width: 100%;
+        padding-inline: 0;
+        padding: 30px 60px;
+        min-height: 300px;
+        justify-content: flex-start;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .container > .text-container > .description{
+        text-align: center;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .container > .form{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    
+    #footerWithMessage > .wrapper{
+        padding: 10px;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .container > .form{
+        padding: 15px;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .container > .text-container{
+        padding: 30px 30px;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .container > .text-container > .title{
+        font-size: 35px;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .container > .text-container > .description{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #footerWithMessage > .wrapper{
+        padding: 0px;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .background{
+        border-radius: 0;
+    }
+}

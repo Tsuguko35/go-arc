@@ -1,0 +1,309 @@
+#contactUsContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#contactUsContent > .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactUsContent > .wrapper > .header{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+}
+
+#contactUsContent > .wrapper > .header > .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#contactUsContent > .wrapper > .header > .background > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hero-overlay-dark1);
+    z-index: 0;
+}
+
+#contactUsContent > .wrapper > .header > .background > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#contactUsContent > .wrapper > .header > .header-content{
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .title{
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid var(--secondary);
+    border-radius: 3px;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .desc{
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact *{
+    color: white;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail:not(.links){
+    font-size: 14px;
+    font-style: italic;
+    word-wrap: break-word;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail.links{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail.links > a{
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail.links > a:hover{
+    color: var(--primary);
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail.links > a > .link-arrow{
+    opacity: 0;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail.links > a:hover > .link-arrow{
+    opacity: 1;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail.links > a > .link-arrow svg{
+    width: 20px;
+    height: 20px;
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail.links > a:hover > .link-arrow *{
+    color: var(--primary);
+}
+
+#contactUsContent > .wrapper > .header > .header-content > .form{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactUsContent > .wrapper > .contact-us-content{
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container{
+    width: 100%;
+    max-width: 1536px;
+    padding: 50px 100px;
+    display: flex;
+    gap: 20px;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content{
+    width: 100%;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .image{
+    display: flex;
+    align-items: flex-start;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .image{
+    min-height: 90px;
+    min-width: 90px;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content *{
+    color: white;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content > .text > .title{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content > .text > .desc{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content > .text > .desc > p:first-child{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content > .action{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content > .action > .button{
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+#contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content > .action > .button:hover{
+    background-color: white;
+    color: var(--primary);
+}
+
+@media only screen and (max-width: 1270px){
+    #contactUsContent > .wrapper > .header > .header-content{
+        padding: 50px;
+    }
+
+    #contactUsContent > .wrapper > .header > .header-content > .text-content > .title{
+        font-size: 42px;
+    }
+
+    #contactUsContent > .wrapper > .header > .header-content > .text-content > .desc{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .label,
+    #contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail:not(.links),
+    #contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos > .contact > .contact-detail.links > a{
+        font-size: 14px;
+    }
+
+    #contactUsContent > .wrapper > .header > .header-content > .text-content > .title{
+        font-size: 36px;
+    }
+
+    #contactUsContent > .wrapper > .header > .header-content > .text-content > .desc{
+        font-size: 16px;
+    }
+
+    #contactUsContent > .wrapper > .contact-us-content > .message-us-container{
+        padding: 30px 50px;
+    }
+
+    #contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content > .title{
+        font-size: 36px;
+    }
+
+    #contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content > .desc > p:first-child{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #contactUsContent > .wrapper > .header > .header-content > .text-content > .contact-infos{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #contactUsContent > .wrapper > .header > .header-content{
+        flex-direction: column;
+    }
+
+    #contactUsContent > .wrapper > .header > .header-content > .text-content,
+    #contactUsContent > .wrapper > .header > .header-content > .form{
+        width: 100%;
+    }
+    #contactUsContent > .wrapper > .contact-us-content > .message-us-container > .text-content{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (max-width: 550px){
+    #contactUsContent > .wrapper > .contact-us-content > .message-us-container{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #contactUsContent > .wrapper > .header > .header-content{
+        padding: 20px;
+    }
+    
+    #contactUsContent > .wrapper > .contact-us-content > .message-us-container{
+        padding: 20px
+    }
+}
+

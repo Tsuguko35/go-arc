@@ -1,0 +1,233 @@
+#productContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#productContent > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#productContent > .wrapper > .header{
+    position: relative;
+    width: 100%;
+    height: 430px;
+}
+
+#productContent > .wrapper > .header > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hero-overlay-dark1);
+    z-index: 0;
+}
+
+#productContent > .wrapper > .header > a{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+#productContent > .wrapper > .header > a > svg{
+    width: 20px;
+    height: 20px;
+}
+
+#productContent > .wrapper > .header > a > svg *{
+    color: white;
+}
+
+#productContent > .wrapper > .header > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#productContent > .wrapper > .product-details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    max-width: 1440px;
+    gap: 50px;
+}
+
+#productContent > .wrapper > .product-details-container > .product-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#productContent > .wrapper > .product-details-container > .product-details > .title-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#productContent > .wrapper > .product-details-container > .product-details > .title-action > .title{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#productContent > .wrapper > .product-details-container > .product-details > .title-action > a{
+    width: 200px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+}
+
+#productContent > .wrapper > .product-details-container > .product-details > .title-action > a:hover{
+    background-color: var(--primary-hover);
+}
+
+#productContent > .wrapper > .product-details-container > .product-details > .description{
+    font-size: 20px;
+}
+
+#productContent > .wrapper > .product-details-container > .product-benefits{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#productContent > .wrapper > .product-details-container > .product-benefits > .title{
+    width: 100%;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+#productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit > .icon{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit > .icon > img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+#productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit > .benefit-title{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit > .benefit-desc{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1270px){
+    #productContent > .wrapper > .product-details-container > .product-details > .description{
+        font-size: 18px;
+    }
+
+    #productContent > .wrapper > .product-details-container > .product-benefits > .title{
+        font-size: 45px;
+    }
+
+    #productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit > .icon > img{
+        width: 64px;
+        height: 64px;
+    }
+
+    #productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit > .icon{
+        height: 64px;
+    }
+
+    #productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit > .benefit-desc{
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 1023px){
+    #productContent > .wrapper > .header{
+        height: 350px;
+    }
+
+    #productContent > .wrapper > .product-details-container{
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #productContent > .wrapper > .product-details-container > .product-details > .title-action > .title{
+        font-size: 30px;
+    }
+
+    #productContent > .wrapper > .product-details-container > .product-details > .description{
+        font-size: 16px;
+    }
+
+    #productContent > .wrapper > .product-details-container > .product-benefits > .title{
+        font-size: 35px;
+    }
+
+    #productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit > .benefit-title{
+        font-size: 28px;
+    }
+
+    #productContent > .wrapper > .product-details-container > .product-benefits > .benefits-grid > .benefit > .benefit-desc{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    #productContent > .wrapper > .product-details-container > .product-details > .title-action{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #productContent > .wrapper > .product-details-container{
+        padding: 20px;
+    }
+}

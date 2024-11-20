@@ -1,0 +1,155 @@
+#messageForm{
+    width: 100%;
+    max-width: 540px;
+    min-height: 620px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#messageForm > .input-group{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    
+}
+
+#messageForm > .input-group > .user-input{
+    position: absolute;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 16px;
+    top: 0;
+    left: 0;
+}
+
+#messageForm > .input-group > .user-input:focus-visible{
+    border: 1px solid var(--primary);
+}
+
+#messageForm > .user-input.textarea{
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    max-height: 165px;
+    padding: 20px;
+    resize: none;
+    font-size: 16px;
+}
+
+#messageForm > .user-input.textarea:focus-visible{
+    border: 1px solid var(--primary);
+}
+
+#messageForm > .checkbox-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#messageForm > .checkbox-input > .checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+#messageForm > .checkbox-input > .checkbox:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+#messageForm > .checkbox-input > .checkbox:checked::after{
+    color: white;
+}
+
+#messageForm > .checkbox-input > .text > span{
+    color: var(--link-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#messageForm > .submit-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+#messageForm > .submit-area > p.success{
+    padding: 10px;
+    background-color: #c8f7c8;
+    border: 1px solid #93C572;
+    color: green;
+    border-radius: 8px;
+}
+
+#messageForm > .submit-area > p.error{
+    padding: 10px;
+    background-color: #F2D2D4;
+    border: 1px solid #FA5F55;
+    color: #FA5F55;
+    border-radius: 8px;
+}
+
+#messageForm > .submit-area > .message-submit{
+    width: 150px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+}
+
+#messageForm > .submit-area > .message-submit:hover{
+    background-color: var(--primary-hover);
+}
+
+@media only screen and (max-width: 767px){
+    #messageForm{
+        padding: 40px 30px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #messageForm > .submit-area > .message-submit{
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #messageForm > .submit-area{
+        flex-direction: column;
+        
+    }
+}

@@ -1,1 +1,1 @@
-# go-arc
+# arc_corp

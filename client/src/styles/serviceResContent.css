@@ -1,0 +1,221 @@
+#residntialContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#residntialContent > .wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    max-width: 1536px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#residntialContent > .wrapper > .text-content{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#residntialContent > .wrapper > .text-content > .action{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#residntialContent > .wrapper > .text-content > .action > a{
+    width: 200px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+}
+
+#residntialContent > .wrapper > .text-content > .action > a:hover{
+    background-color: var(--primary-hover);
+}
+
+#residntialContent > .wrapper > .text-content > .header{
+    text-align: center;
+    color: var(--black);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#residntialContent > .wrapper > .text-content > .header.notBold{
+    font-weight: 500;
+}
+
+#residntialContent > .wrapper > .text-content > .text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#residntialContent > .wrapper > .text-content > .text > p{
+    text-align: center;
+    font-size: 20px;
+}
+
+#residntialContent > .wrapper > .text-content.withImage{
+    gap: 150px;
+}
+
+#residntialContent > .wrapper > .text-content > .container{
+    display: flex;
+    gap: 20px;
+}
+
+#residntialContent > .wrapper > .text-content > .container.inverted{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .image > img{
+    width: 100%;
+    height: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.8);
+}
+
+#residntialContent > .wrapper > .text-content > .container > .explanation-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .explanation-content > p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .explanation-content > .points{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .explanation-content > .points > .point{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .explanation-content > .points > .point > .icon > img{
+    min-width: 35px;
+    min-height: 35px;
+    object-fit: contain;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .explanation-content > .points > .point > .point-text *{
+    color: var(--black);
+    font-size: 16px;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .explanation-content > .action{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .explanation-content > .action > a{
+    width: 200px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+}
+
+#residntialContent > .wrapper > .text-content > .container > .explanation-content > .action > a:hover{
+    background-color: var(--primary-hover);
+}
+
+#residntialContent > .wrapper > .text-content > .container.inverted > .explanation-content *{
+    text-align: right;
+}
+
+#residntialContent > .wrapper > .text-content > .container.inverted > .explanation-content > .header{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px){
+    #residntialContent > .wrapper{
+        padding: 50px
+    }
+    
+    #residntialContent > .wrapper > .text-content > .header,
+    #residntialContent > .wrapper > .text-content > .container.inverted > .explanation-content > .header{
+        font-size: 35px;
+    }
+    
+    #residntialContent > .wrapper > .text-content > .text > p,
+    #residntialContent > .wrapper > .text-content > .container > .explanation-content > p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #residntialContent > .wrapper{
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #residntialContent > .wrapper > .text-content > .container,
+    #residntialContent > .wrapper > .text-content > .container.inverted{
+        flex-direction: column;
+    }
+    #residntialContent > .wrapper > .text-content > .container.inverted > .explanation-content *{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #residntialContent > .wrapper{
+        padding: 25px;
+    }
+
+    #residntialContent > .wrapper > .text-content > .header,
+    #residntialContent > .wrapper > .text-content > .container.inverted > .explanation-content > .header{
+        font-size: 30px;
+    }
+}
